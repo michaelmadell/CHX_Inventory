@@ -1,0 +1,359 @@
+{
+    "hardwareVersion": "ahkp-106200 A.0",
+    "serialNumber": "30236-0001",
+    "firmwareVersion": "2025.8.1_rc7",
+    "hostname": "30236-0001",
+    "alias": "",
+    "hostIp": "10.50.0.142",
+  "switchDevice": {
+    "serialNumber": "30287-0003",
+    "model": "N120",
+    "firmwareVersion": "2025.8.1_rc7",
+    "hostIp": "10.50.0.142"
+},
+  "psus": [
+        {
+        "id": 1,
+        "serialNumber": "TEC800NA240800176 ",
+        "manufacturer": "bel",
+        "model": "TEC800-12-074NA",
+        "maxPower": 800
+    },
+    {
+        "id": 2,
+        "serialNumber": "TEC800NA240800099 ",
+        "manufacturer": "bel",
+        "model": "TEC800-12-074NA",
+        "maxPower": 800
+    },
+    {
+        "id": 3,
+        "serialNumber": "TEC800NA240800178 ",
+        "manufacturer": "bel",
+        "model": "TEC800-12-074NA",
+        "maxPower": 800
+    },
+    {
+        "id": 4,
+        "serialNumber": "TEC800NA240800171 ",
+        "manufacturer": "bel",
+        "model": "TEC800-12-074NA",
+        "maxPower": 800
+    }
+  ],
+  "nodes": [
+        {
+        "id": 1,
+        "hostname": "",
+        "netExtIpv4": "",
+        "serialNumber": "",
+        "model": "",
+        "cpu": "",
+        "gpu": "",
+        "ram0": null,
+        "ram1": null,
+        "os": "",
+        "nodeName": "",
+        "nodeGroup": "",
+        "nodeRole": "",
+        "netIntMac": "",
+        "netExtMac": ""
+    },
+    {
+        "id": 2,
+        "hostname": "CHX-30042-0009",
+        "netExtIpv4": "",
+        "serialNumber": "30042-0009",
+        "model": "HX2000",
+        "cpu": "Intel(R) Core(TM) Ultra 7 165H",
+        "gpu": "None",
+        "ram0": 16,
+        "ram1": 16,
+        "os": "Microsoft Windows 11 Pro",
+        "nodeName": "",
+        "nodeGroup": "",
+        "nodeRole": "",
+        "netIntMac": "0013956583a0",
+        "netExtMac": "0017fd60039d"
+    },
+    {
+        "id": 3,
+        "hostname": "",
+        "netExtIpv4": "",
+        "serialNumber": "",
+        "model": "",
+        "cpu": "",
+        "gpu": "",
+        "ram0": null,
+        "ram1": null,
+        "os": "",
+        "nodeName": "",
+        "nodeGroup": "",
+        "nodeRole": "",
+        "netIntMac": "",
+        "netExtMac": ""
+    },
+    {
+        "id": 4,
+        "hostname": "",
+        "netExtIpv4": "",
+        "serialNumber": "",
+        "model": "",
+        "cpu": "",
+        "gpu": "",
+        "ram0": null,
+        "ram1": null,
+        "os": "",
+        "nodeName": "",
+        "nodeGroup": "",
+        "nodeRole": "",
+        "netIntMac": "",
+        "netExtMac": ""
+    },
+    {
+        "id": 5,
+        "hostname": "",
+        "netExtIpv4": "",
+        "serialNumber": "",
+        "model": "",
+        "cpu": "",
+        "gpu": "",
+        "ram0": null,
+        "ram1": null,
+        "os": "",
+        "nodeName": "",
+        "nodeGroup": "",
+        "nodeRole": "",
+        "netIntMac": "",
+        "netExtMac": ""
+    },
+    {
+        "id": 6,
+        "hostname": "",
+        "netExtIpv4": "",
+        "serialNumber": "",
+        "model": "",
+        "cpu": "",
+        "gpu": "",
+        "ram0": null,
+        "ram1": null,
+        "os": "",
+        "nodeName": "",
+        "nodeGroup": "",
+        "nodeRole": "",
+        "netIntMac": "",
+        "netExtMac": ""
+    },
+    {
+        "id": 7,
+        "hostname": "",
+        "netExtIpv4": "",
+        "serialNumber": "",
+        "model": "",
+        "cpu": "",
+        "gpu": "",
+        "ram0": null,
+        "ram1": null,
+        "os": "",
+        "nodeName": "",
+        "nodeGroup": "",
+        "nodeRole": "",
+        "netIntMac": "",
+        "netExtMac": ""
+    },
+    {
+        "id": 8,
+        "hostname": "",
+        "netExtIpv4": "",
+        "serialNumber": "",
+        "model": "",
+        "cpu": "",
+        "gpu": "",
+        "ram0": null,
+        "ram1": null,
+        "os": "",
+        "nodeName": "",
+        "nodeGroup": "",
+        "nodeRole": "",
+        "netIntMac": "",
+        "netExtMac": ""
+    },
+    {
+        "id": 9,
+        "hostname": "",
+        "netExtIpv4": "",
+        "serialNumber": "",
+        "model": "",
+        "cpu": "",
+        "gpu": "",
+        "ram0": null,
+        "ram1": null,
+        "os": "",
+        "nodeName": "",
+        "nodeGroup": "",
+        "nodeRole": "",
+        "netIntMac": "",
+        "netExtMac": ""
+    },
+    {
+        "id": 10,
+        "hostname": "",
+        "netExtIpv4": "",
+        "serialNumber": "",
+        "model": "",
+        "cpu": "",
+        "gpu": "",
+        "ram0": null,
+        "ram1": null,
+        "os": "",
+        "nodeName": "",
+        "nodeGroup": "",
+        "nodeRole": "",
+        "netIntMac": "",
+        "netExtMac": ""
+    },
+    {
+        "id": 11,
+        "hostname": "DESKTOP-ANC8KRS",
+        "netExtIpv4": "",
+        "serialNumber": "30275-0011",
+        "model": "HX2000",
+        "cpu": "Intel(R) Core(TM) Ultra 7 165H",
+        "gpu": "NVIDIA RTX 2000 Ada",
+        "ram0": 16,
+        "ram1": 16,
+        "os": "Microsoft Windows 11 Pro",
+        "nodeName": "",
+        "nodeGroup": "",
+        "nodeRole": "",
+        "netIntMac": "00139567ffcb",
+        "netExtMac": "0017fd6006a9"
+    },
+    {
+        "id": 12,
+        "hostname": "DESKTOP-ANC8KRS",
+        "netExtIpv4": "",
+        "serialNumber": "30275-0012",
+        "model": "HX2000",
+        "cpu": "Intel(R) Core(TM) Ultra 7 165H",
+        "gpu": "NVIDIA RTX 2000 Ada",
+        "ram0": 16,
+        "ram1": 16,
+        "os": "Microsoft Windows 11 Pro",
+        "nodeName": "Test",
+        "nodeGroup": "",
+        "nodeRole": "",
+        "netIntMac": "00139567ff99",
+        "netExtMac": "0017fd6006b2"
+    }
+  ],
+  "fans": [
+    {
+        "id": 1,
+        "moduleSerialNumber": "30060-0045",
+        "moduleRevision": "A.0",
+        "moduleBuildTime": "2025-05-12T13:06:16Z",
+        "fanSerialNumber": "EA0231500409",
+        "fanManufacturer": "DeltaFan",
+        "fanModel": "GFB0612ES",
+        "maxSpeed": null
+    },
+    {
+        "id": 2,
+        "moduleSerialNumber": "30060-0032",
+        "moduleRevision": "A.0",
+        "moduleBuildTime": "2025-05-12T13:10:49Z",
+        "fanSerialNumber": "EA0231500213",
+        "fanManufacturer": "DeltaFan",
+        "fanModel": "GFB0612ES",
+        "maxSpeed": null
+    },
+    {
+        "id": 3,
+        "moduleSerialNumber": "30060-0024",
+        "moduleRevision": "A.0",
+        "moduleBuildTime": "2025-05-12T12:48:53Z",
+        "fanSerialNumber": "EA0231501500",
+        "fanManufacturer": "DeltaFan",
+        "fanModel": "GFB0612ES",
+        "maxSpeed": null
+    },
+    {
+        "id": 4,
+        "moduleSerialNumber": "30060-0025",
+        "moduleRevision": "A.0",
+        "moduleBuildTime": "2025-05-12T12:59:24Z",
+        "fanSerialNumber": "3B2407Z95U",
+        "fanManufacturer": "Sunon",
+        "fanModel": "XG60561BX",
+        "maxSpeed": null
+    },
+    {
+        "id": 5,
+        "moduleSerialNumber": "30060-0026",
+        "moduleRevision": "A.0",
+        "moduleBuildTime": "2025-05-12T12:55:50Z",
+        "fanSerialNumber": "3B2407Z95Q",
+        "fanManufacturer": "Sunon",
+        "fanModel": "XG60561BX",
+        "maxSpeed": null
+    },
+    {
+        "id": 6,
+        "moduleSerialNumber": "30060-0031",
+        "moduleRevision": "A.1",
+        "moduleBuildTime": "2025-05-12T10:21:30Z",
+        "fanSerialNumber": "EA0231501484",
+        "fanManufacturer": "DeltaFan",
+        "fanModel": "GFB0612ES",
+        "maxSpeed": null
+    }
+  ],
+  "firmwareData": [
+        {
+            "version": "2025.8.1_rc7",
+            "packageDate": "2025-08-19T21:15:17Z",
+            "installDate": "2025-08-20T07:13:25Z"
+        },
+        {
+            "version": "2025.8.1_rc5",
+            "packageDate": "2025-08-07T16:56:22Z",
+            "installDate": "2025-08-07T17:29:28Z"
+        },
+        {
+            "version": "2025.8.1_rc7",
+            "packageDate": "2025-08-19T21:15:17Z",
+            "installDate": "2025-08-22T09:54:53Z"
+        },
+        {
+            "version": "2025.6.1_rc16",
+            "packageDate": "2025-07-28T08:05:43Z",
+            "installDate": "2025-08-07T12:53:01Z"
+        }
+    ],
+  "locations": [
+    {
+     "datacenter": "",
+      "room": "",
+      "aisle": "",
+      "rack": "",
+      "rackSlot": ""
+    }
+  ],
+  "mgmtInfo": [
+    {
+    "serialNumber": "30236-0001",
+    "firmwareVersion": "2025.8.1_rc7",
+    "hostname": "30236-0001",
+    "hostIp": "10.50.0.142",
+    "alias": "",
+    "ipAssignment": "dhcp",
+    "gateway": "10.50.0.254",
+    "netmask": "255.255.255.0",
+    "dns": [
+        "10.50.0.10"
+    ],
+    "fqdn": "30236-0001.product-test.local"
+    }
+  ]
+}
