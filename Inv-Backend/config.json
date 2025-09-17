@@ -1,0 +1,16 @@
+[
+    {
+        "id": "labtest_enclosure",
+        "name": "Labtest Enclosure",
+        "ip": "10.50.0.122",
+        "username": "admin",
+        "password": "xxxxxxx"
+    },
+    {
+        "id": "thermocouple",
+        "name": "Thermocouple Chassis",
+        "ip": "10.50.0.142",
+        "username": "admin",
+        "password": "xxxxxxx"
+    }
+]
