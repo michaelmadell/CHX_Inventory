@@ -1,14 +1,11 @@
 import {
   Dialog,
   DialogPanel,
-  DialogTitle,
-  Transition,
-  TransitionChild,
+  DialogTitle
 } from "@headlessui/react";
-import { Fragment, useState } from "react";
+import { motion, AnimatePresence } from "motion/react";
 import { type Node } from "../types";
 import { X } from "lucide-react";
-import clsx from "clsx";
 
 interface NodeModalProps {
   isOpen: boolean;
@@ -18,8 +15,10 @@ interface NodeModalProps {
 
 const DetailRow = ({ label, value }: { label: string, value?: string | number | null }) => (
     <div className="bg-gray-50 px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+      <dl>
         <dt className="text-sm font-medium text-gray-500">{label}</dt>
         <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0 font-mono">{value || 'N/A'}</dd>
+        </dl>
     </div>
 );
 
@@ -28,11 +27,21 @@ export default function NodeModal({ isOpen, onClose, node }: NodeModalProps) {
   const totalRam = (node?.ram0 ?? 0) + (node?.ram1 ?? 0);
 
   return (
-    <Transition appear show={isOpen} as={Fragment}>
-      <Dialog as="div" className='relative z-10 transition-all duration-500 ease data-closed:opacity-0' onClose={onClose}>
+    <AnimatePresence>
+      {isOpen && node && (
+        <Dialog as="div" className="relative z-10" static open={isOpen} onClose={onClose}>
+          <motion.div
+            className="fixed inset-0 bg-black/30"
+            initial={{ opacity: 0, transition: { duration: 0.3 } }}
+            animate={{ opacity: 1, transition: { duration: 0.3 } }}
+            exit={{ opacity: 0, transition: { duration: 0.3 } }} />
         <div className="fixed inset-0 overflow-y-auto bg-black/30">
           <div className="flex min-h-full items-center justify-center p-4 text-center">
-            { node && (
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0, transition: { duration: 0.3, ease: [0, 0.71, 0.2, 1.01] } }}
+              exit={{ opacity: 0, scale: 0.95, y: 20, transition: { duration: 0.2, ease: [0, 0.71, 0.2, 1.01] } }}
+              >
             <DialogPanel className="w-full max-w-2xl transform overflow-hidden rounded-2xl bg-white text-left align-middle shadow-xl transition-all">
               <DialogTitle
                 as="h3"
@@ -80,10 +89,11 @@ export default function NodeModal({ isOpen, onClose, node }: NodeModalProps) {
                 </button>
               </div>
             </DialogPanel>
-            )}
+            </motion.div>
           </div>
         </div>
       </Dialog>
-    </Transition>
+      )}
+      </AnimatePresence>
   );
 }

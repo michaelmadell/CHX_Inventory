@@ -1,15 +1,25 @@
 const express = require('express');
-const { startScheduler, proxyApiCall } = require('./enclosureManager');
+const { startScheduler, proxyApiCall, initialiseManager } = require('./enclosureManager.js');
 
 const app = express();
 const PORT = process.env.PORT || 4000;
 
+try {
+    initialiseManager();
+    startScheduler();
+} catch (error) {
+    console.error('Fatal: failed to initalise enclosure manager');
+    console.error(error);
+    process.exit(1);
+}
+
 app.use(express.json);
-startScheduler();
 
 app.post('/api/proxy/:enclosureId', async (req, res) => {
     const { enclosureId } = req.params;
+    console.log(enclosureId)
     const { method, url, data } = req.body;
+    console.log(method, url, data)
 
     if (!method || !url) {
         return res.status(400).json({ error: 'Request body must include "method" and "url".'});
@@ -24,6 +34,10 @@ app.post('/api/proxy/:enclosureId', async (req, res) => {
     }
 });
 
-app.listen(PORT, () => {
-    console.log(`Backend Server running on http://localhost:${PORT}`);
+app.listen(PORT)
+
+process.on('uncaughtException', (error) => {
+  console.error('🔥🔥🔥 UNCAUGHT EXCEPTION! The server crashed!');
+  console.error(error);
+  process.exit(1);
 });

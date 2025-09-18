@@ -3,8 +3,8 @@ import { type EnclosureData } from './types'
 import EnclosureTabs from './components/EnclosureTabs'
 import EnclosureDetails from './components/EnclosureDetails'
 import { Server } from 'lucide-react'
-import CHXLogo from '../public/CHX.png'; 
-import AHKLogo from '../public/GUI1.png';
+import CHXLogo from '/CHX.png'; 
+import AHKLogo from '/GUI1.png';
 
 type EnclosureMap = {
   [key: string]: EnclosureData;
